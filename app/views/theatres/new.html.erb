@@ -1,0 +1,15 @@
+<h1>New Theatre</h1>
+<%= form_with model: @theatre, local: true do |form| %>
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+  <p>
+    <%= form.label :capacity %><br>
+    <%= form.number_field :capacity %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+<%= link_to 'Back to Theatres', theatres_path %>

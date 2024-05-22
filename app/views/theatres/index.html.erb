@@ -1,0 +1,7 @@
+<h1>Theatres</h1>
+<%= link_to 'New Theatre', new_theatre_path %>
+<ul>
+  <% @theatres.each do |theatre| %>
+    <li><%= link_to theatre.name, theatre %></li>
+  <% end %>
+</ul>
